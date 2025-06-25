@@ -14,7 +14,6 @@
     "react-router-dom": "^7.6.2",
     "@google/genai": "^1.5.1",
     "recharts": "^2.15.3",
-    "hls.js/dist/hls.min.js": "^1.5.13",
     "hls.js": "^1.6.5"
   },
   "devDependencies": {
