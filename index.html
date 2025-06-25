@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Building Manager - HERE AND NOW AI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="https://raw.githubusercontent.com/hereandnowai/images/refs/heads/main/favicon-logo-with-name.png" type="image/png">
+  <script>
+    tailwind.config = {
+      darkMode: 'class', // Enable class-based dark mode
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FFDF00', // Golden Yellow
+            secondary: '#004040', // Teal
+            'hnai-dark': '#1a202c', // Dark background for dark mode
+            'hnai-light': '#f7fafc', // Light background for light mode
+          },
+        },
+      },
+    };
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "@google/genai": "https://esm.sh/@google/genai@^1.5.1",
+    "recharts": "https://esm.sh/recharts@^2.15.3",
+    "hls.js/dist/hls.min.js": "https://esm.sh/hls.js@^1.5.13/dist/hls.min.js",
+    "hls.js/": "https://esm.sh/hls.js@^1.6.5/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-hnai-light dark:bg-hnai-dark text-gray-900 dark:text-gray-100 transition-colors duration-300">
+  <div id="root"></div>
+  <script>
+    // Dynamically append the script tag with a timestamp for cache busting
+    const script = document.createElement('script');
+    script.type = 'module';
+    script.src = `index.tsx?v=${Date.now()}`;
+    document.body.appendChild(script);
+  </script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Smart Building Manager",
+  "description": "An AI-powered application by HERE AND NOW AI to optimize energy consumption, enhance security, and improve occupant comfort in smart buildings.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
